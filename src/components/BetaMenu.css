@@ -1,0 +1,86 @@
+/* src/screens/BetaMenu.css */
+
+.menu-container {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 1000px; /* Maximum width for better readability */
+    margin: auto; /* Center the container horizontally */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between heading and button */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below header */
+}
+
+h2 {
+    margin: 0; /* Remove default margin */
+    color: #343a40; /* Darker text color */
+}
+
+.proceed-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff; /* Blue background */
+    cursor: pointer;
+    font-size: 16px; /* Larger text for readability */
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+.proceed-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between cells */
+    background-color: #ffffff; /* White background */
+    margin-top: 20px; /* Space above the table */
+}
+
+.menu-table th, .menu-table td {
+    padding: 12px 15px; /* Padding inside cells */
+    text-align: left;
+    border: 1px solid #dee2e6; /* Light border for spreadsheet grid lines */
+}
+
+.menu-table th {
+    background-color: #343a40; /* Dark header background */
+    color: white; /* White text for headers */
+    font-weight: bold;
+}
+
+.menu-table td {
+    background-color: #f1f1f1; /* Light grey background for cells */
+}
+
+.menu-table tr:nth-child(even) td {
+    background-color: #e9ecef; /* Alternate row color for better readability */
+}
+
+.quantity-input {
+    width: 60px; /* Fixed width for quantity input */
+    padding: 5px;
+    text-align: center; /* Center text */
+    border: 1px solid #ced4da; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.add-to-cart-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #6c757d; /* Grey background for Add to Cart */
+    cursor: pointer;
+    font-size: 14px; /* Slightly smaller text */
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+.add-to-cart-button:hover {
+    background-color: #5a6268; /* Darker grey on hover */
+}

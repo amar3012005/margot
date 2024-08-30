@@ -1,0 +1,99 @@
+.menu-container {
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 1000px;
+    background: linear-gradient(135deg, #0d0f13, #1a1c20);
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0.95;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.proceed-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #e0e0e0;
+    background-color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.proceed-button:hover {
+    background-color: #0056b3;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2b2b2b;
+    border-radius: 15px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.menu-table th, .menu-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #555;
+}
+
+.menu-table th {
+    background-color: #1a1a1a;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+
+.menu-table td {
+    background-color: #2b2b2b;
+    color: #0c2761;
+}
+
+.menu-table tr:nth-child(even) td {
+    background-color: #3b3b3b;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #555;
+    border-radius: 8px;
+    background-color: #3b3e45;
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+.add-to-cart-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #0d0f13, #1a1c20);
+    background-color: #6c757d;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button.added {
+    background-color: #28a745; /* Green color when added to cart */
+    color: white;
+}
+
+.add-to-cart-button:hover {
+    background-color: #5a6268;
+}

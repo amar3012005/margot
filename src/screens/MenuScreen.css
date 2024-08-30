@@ -1,0 +1,46 @@
+/* Basic layout and styling for MenuScreen */
+.menu-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-header {
+    background-color: #ff5656;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-items {
+    margin-top: 20px;
+}
+
+.menu-item {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.menu-item p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+    color: #ff5656;
+}

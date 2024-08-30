@@ -1,0 +1,86 @@
+/* src/screens/DeltaMenu.css */
+
+.menu-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0;
+    color: #343a40;
+}
+
+.proceed-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.proceed-button:hover {
+    background-color: #0056b3;
+}
+
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.menu-table th, .menu-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+.menu-table th {
+    background-color: #343a40;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-table td {
+    background-color: #f1f1f1;
+}
+
+.menu-table tr:nth-child(even) td {
+    background-color: #e9ecef;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.add-to-cart-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #6c757d;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #5a6268;
+}

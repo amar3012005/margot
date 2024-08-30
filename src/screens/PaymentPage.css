@@ -1,0 +1,86 @@
+.payment-container {
+  width: 400px; /* Slightly wider for better form presentation */
+  margin: 50px auto; /* Centered with some top margin */
+  text-align: center;
+  padding: 30px; /* Increased padding for a spacious feel */
+  background: linear-gradient(135deg, #0d0f13, #1a1c20); /* Dark grey background for modern look */
+  border-radius: 15px; /* Larger rounded corners for a more modern card style */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+   /* Subtle border to define the edges */
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.95;
+  
+}
+
+.input-group {
+  margin-bottom: 25px; /* More space between input groups */
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px; /* More space below label */
+  color: #b0b0b0; /* Light grey color for labels */
+  font-weight: bold; /* Bold text for emphasis */
+  font-size: 14px; /* Slightly larger font size */
+  text-transform: uppercase; /* Uppercase for a clean, modern look */
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px; /* Larger padding for a comfortable input area */
+  box-sizing: border-box;
+  border-radius: 8px; /* Rounded corners for inputs */
+  border: 1px solid #555; /* Darker border for better contrast */
+  background-color: #3b3e45; /* Darker grey for inputs */
+  color: #e0e0e0; /* Light grey text for inputs */
+  font-size: 16px; /* Larger font size for better readability */
+  outline: none; /* Remove the default outline */
+  transition: border-color 0.3s ease; /* Smooth transition on focus */
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #007bff; /* Highlight border on focus */
+}
+
+button {
+  width: 100%; /* Full width for better usability */
+  padding: 15px; /* Larger padding for a solid button feel */
+  background-color: #28a745; /* Green color for the button */
+  color: white;
+  border: none;
+  border-radius: 10px; /* Rounded button corners */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Strong shadow for button */
+  font-size: 18px; /* Larger font size for the button text */
+  font-weight: bold; /* Bold text for prominence */
+  text-transform: uppercase; /* Uppercase text for modern style */
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+.success-tick {
+  color: #28a745; /* Green color for success indication */
+  font-size: 30px; /* Larger size for emphasis */
+  margin-top: 20px;
+  display: flex;
+  align-items: center; /* Align tick with text vertically */
+  justify-content: center; /* Center the tick within the element */
+}
+
+.success-tick:before {
+  content: "✔"; /* Unicode character for tick */
+  margin-right: 10px; /* Space between tick and text */
+  font-size: 34px; /* Even larger tick */
+  color: #28a745; /* Matching green color */
+}

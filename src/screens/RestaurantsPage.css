@@ -1,0 +1,106 @@
+/* src/screens/RestaurantsPage.css */
+
+.restaurants-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #000; /* Black background color */
+    min-height: 100vh; /* Full height */
+    overflow-y: auto; /* Enable vertical scrolling for the entire page */
+}
+
+.title {
+    font-size: 2.5rem; /* Slightly larger title */
+    color: #fff; /* White text color */
+    margin-bottom: 30px; /* Space below title */
+    text-align: center; /* Center title */
+    font-family: 'Arial', sans-serif; /* Classy, bold font */
+    letter-spacing: 0.5px; /* Slightly increase letter spacing for a more refined look */
+}
+
+.restaurant-container {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for larger screens */
+    margin: 0 auto; /* Center container */
+    padding: 0 20px; /* Side padding for better spacing */
+}
+
+.restaurant-block {
+    width: 100%; /* Full width for each block */
+    margin-bottom: 40px; /* Increased space between blocks for a more elegant look */
+    position: relative; /* Position relative for absolute positioning of overlay */
+    overflow: hidden; /* Hide any overflow */
+    border-radius: 10px; /* More pronounced rounded corners for a modern look */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+.restaurant-block:hover {
+    transform: scale(1.02); /* Slight zoom on hover for a subtle effect */
+}
+
+.restaurant-link {
+    display: block; /* Make the link block-level for better clickability */
+    text-decoration: none; /* Remove underlines */
+}
+
+.restaurant-image {
+    width: 100%; /* Responsive image that fits the container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    filter: grayscale(100%); /* Black and white filter for images */
+    transition: filter 0.3s ease, transform 0.9s ease; /* Smooth transition on hover */
+}
+
+.restaurant-block:hover .restaurant-image {
+    filter: grayscale(0%); /* Restore color on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.restaurant-name-overlay {
+    position: absolute; /* Position it absolutely within the block */
+    bottom: 50%; /* Position it near the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 0); /* Adjust for centering */
+    color: #ffffff; /* White text color */
+    font-size: 3rem; /* Font size for restaurant name */
+    font-family: Courier, monospace; /* Matching font style */
+    opacity: 0.7; /* High opacity for better visibility */
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.9); /* Stronger shadow for better readability */
+    text-align: center; /* Center text */
+    letter-spacing: 1px; /* Add a little spacing between letters */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.restaurant-block:hover .restaurant-name-overlay {
+    opacity: 1; /* Full opacity on hover */
+    transform: translate(-50%, -5%); /* Slight upward shift on hover */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .restaurant-container {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+
+    .restaurant-name-overlay {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .restaurant-container {
+        width:100%;
+        padding: 0 5px; /* Reduce padding further on mobile devices */
+    }
+
+    .restaurant-image {
+        width: 100%; /* Adjust height to fit mobile screens better */
+    }
+
+    .restaurant-name-overlay {
+        font-size: 2rem; /* Adjust font size for mobile screens */
+    }
+}

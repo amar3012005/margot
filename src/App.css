@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.content {
+  background: lightblue;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) {
+  .content {
+    width: 60%;
+  }
+}
